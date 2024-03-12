@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROI Calculator</title>
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
+
+    <section class="parallex">
+        <header>
+            <img src = 'logo.png' height="35px">
+        </header>
+
+        <img src="screen.png" id="screen">
+        <img src="model.png" id="model">
+        <h2 id="text" data-text="&nbsp;DAP Savings Calculator&nbsp;">&nbsp;DAP Savings Calculator&nbsp;</h2>
+        <h3 id="text1">Calculate Software ROI with<br> 
+            the <span id="whatfix" data-value="WHATFIX">WHATFIX</span> Digital Adoption<br>Platform
+        </h3>
+        <h4 id="text2" class="typing-ani">Measure and unlock the true potential of <br>your enterprise applications</h4>
+        
+        <div class="nextPage">
+            <a href="#section2">Get Started</a>
+        </div>
+        
+
+    </section>
+
+    <section class="roi-calculator-form" id="section2">
+        <div class="form-body">
+            <form action="https://script.google.com/a/macros/whatfix.com/s/AKfycbx5GXHVWLgh4BSzqS7y3IHcxyDkDVBy-d7fyqRYaK24kFETRdxfrvNISAiWXwU-PErT/exec" id="ROIFORM" method="POST">
+                <h2>Find out your savings</h2>
+                <div class="inputBox">
+                    <input type="text" id="name" name="name" required>
+                    <span>Name</span>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" id="email" name="email" required>
+                    <span>Email</span>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" id="designation" name="designation" required>
+                    <span>Designation</span>
+                </div>
+
+                <div class="application-category-container">
+                    <label for="options"><p>Select an application category that might be relevant to you:</p></label><br/>
+                    <select id="options" name="app-cat">
+                        <option value="CMS">CMS (WordPress,Appie Pie Website Builder,Hubspot CMS Hub)</option>
+                        <option value="CRM">CRM (Salesforce,SAP, Oracle, Microsoft Dynamics)</option>
+                        <option value="ERP">ERP (Oracle NetSuite,SAP ECC, Delteck CostPoint)</option>
+                        <option value="HCM">HCM (Zoho People, Darwinbox, factorHR)</option>
+                        <option value="HRIS">HRIS (ADP, Namely, BambooHR)</option>
+                        <option value="ITSM">ITSM (Jira, Zendesk, ServiceNow)</option>
+                        <option value="HRMS">HRMS (SAP Success Factor, Workday, ADP)</option>
+                        <option value="EMS">EMS (TMW Suite, Responder 360)</option>
+                        <option value="POS">POS (Clover, LightSpeed, Shopify)</option>
+                        <option value="EMR">EMR (Epic, Meditech, NextGen)</option>
+                        <option value="SAOS">SAOS (Ceina Software)</option>
+                        <option value="BSS">BSS (Oracle Support, Ericsson Digital BSS, NetCracker Avenue)</option>
+                        <option value="LMS">LMS (Talent LMS, Adobe Learning Manager,360 Learning)</option>
+                        <option value="DMS">DMS (Adobe Documnet CLoud, PaperSave,Zoho)</option>
+                        <option value="Project Management">Project Management (Asana, Trello, Jira)</option>
+                        <option value="Collaborations">Collaborations (Slack, Confluence)</option>
+                      <option value="others">Others</option>
+                    </select>
+                    <div class="input-box">
+                      <label for="otherOption">Please enter the app category: </label>
+                      <input type="text" id="otherOption" style="border: 1px solid #ff6f00">
+                    </div>
+                </div>
+
+                <div class="region-container">
+                    <label for="options"><p>Which region are you looking to deploy with the Whatfix Digital Adoption Platform?</p><br/></label>
+                    <select id="q3">
+                        <option value="18.46068">Global</option>
+                        <option value="34.44602">Americas</option>
+                        <option value="22.23352">Europe</option>
+                        <option value="23.41193">Australia/ New Zealand</option>
+                        <option value="8.87784">Southeast Asia</option>
+                        <option value="3.12898">India</option>
+                    </select><br>
+                </div>
+
+                <div class="users-container">
+                    <p>How many end users do you have for this application?</p>
+                    <input type="number" id="numericalInput" name="numericalInput" required min="0" max="50000" step="100">
+                </div>
+                
+                <div class="impact-areas" name="impact-areas">
+                    <p>Select the impact areas for your organization:</p>
+                    <input type="checkbox" name="q4" value="6.6"> <span>Onboarding and training</span><br />
+                    <input type="checkbox" name="q4" value="0.8"> <span>Communicating change and adoption</span><br />
+                    <input type="checkbox" name="q4" value="3.15"> <span>Reduce the time to go-live</span> <br />
+                    <input type="checkbox" name="q4" value="525"> <span>Deflect the queries and optimize the time take to resolve them</span> <br />
+                    <input type="checkbox" name="q4" value="2508.8"> <span>Support and training materials to reduce effort</span><br />
+                    <input type="checkbox" name="q4" value="14598.08"> <span>Optimize efforts for translation</span> <br />
+                </div>
+
+                <div class="btn-box">
+                    <button class="btn" type="submit">
+                        See my Savings
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 3500);
+    </script>
+</body>
+</html>
